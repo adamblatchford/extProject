@@ -40,15 +40,19 @@ exports.main = async (context = {}, sendResponse) => {
 					  	],
 					},
 					
-					shouldIncludeAlertSection && {
-						 "type": "alert",
-						 "title": "Equiteq Deal",
-						 "variant": "success",
-						 "body": {
-							 "type": "text",
-							 "text": "Live Mandate"
-						 }
-					 },
+					...(shouldIncludeAlertSection
+					    ? [
+						    {
+							    type: 'alert',
+							    title: 'Equiteq Deal',
+							    variant: 'success',
+							    body: {
+								    type: 'text',
+								    text: 'Live Mandate',
+							    },
+						    },
+					    ]
+					    : []),
 					 
 					 {
 						 "type": "divider",
