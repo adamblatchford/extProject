@@ -28,6 +28,26 @@ exports.main = async (context = {}, sendResponse) => {
 				 "type": "tile",
 				 "body": [
 				
+					 {
+						 "type": "heading",
+						 "text": "data snapshot"
+					 },
+					 
+					 {
+						 "type": "descriptionList",
+						 "direction": "row",
+						 "items":
+							 [
+								 {
+									 "label": "Component",
+									 "value": "Description"
+								 },
+								 {
+									 "label": "What's shown",
+									 "value": "Pairs of"
+								 }
+							 ]
+					 },
 					 
 					 {
 						 type: 'statistics',
@@ -54,27 +74,6 @@ exports.main = async (context = {}, sendResponse) => {
 					  	],
 					},
 					
-					
-					 {
-						 "type": "divider",
-						 "distance": "small"
-					 },
-					 
-					 {
-						 "type": "text",
-						 "format": "markdown",
-						 "text": "**Engagement**"
-					},
-					 
-					 {
-						 "type": "progressBar",
-						 "variant": "warning",
-						 "valueMax": 100,
-						 "value": 20,
-						 "title": "Bottles",
-						 "valueDescription": "20 out of 100",
-						 "showPercentage": true
-					 },
 				 ],
 				}
 			],
