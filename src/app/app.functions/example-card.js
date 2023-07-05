@@ -1,6 +1,6 @@
 exports.main = async (context = {}, sendResponse) => {
 	const {
-		propertiesToSend: { name, numberofemployees, growth1yr_employees__linkedin_,is_equiteq_sell_side_in_market_, hs_lead_status, lifecyclestage },
+		propertiesToSend: { name, numberofemployees, growth1yr_employees__linkedin_,is_equiteq_sell_side_in_market_, hs_lead_status, lifecyclestage,equiteq_region,type_of_company },
 	} = context;
 	
 	try {
@@ -46,7 +46,15 @@ exports.main = async (context = {}, sendResponse) => {
 								 {
 									 "label": "Lead Status",
 									 "value": hs_lead_status
-								 }
+								 },
+								 {
+									 "label": "Region",
+									 "value": equiteq_region
+								 },
+								 {
+									 "label": "Type of Company",
+									 "value": type_of_company
+								 },
 							 ]
 					 },
 					 
