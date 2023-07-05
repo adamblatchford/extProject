@@ -1,6 +1,6 @@
 exports.main = async (context = {}, sendResponse) => {
 	const {
-		propertiesToSend: { name, numberofemployees, growth1yr_employees__linkedin_,advisory_client,is_equiteq_sell_side_in_market_, sip___is_cancelled_on_hold, sip___is_coming_to_market, sip___is_coming_to_market__sales_opp_, sip___is_considering_a_transaction, is_deal_in_market_, is_equiteq_buy_side_target_in_market_, live_recent_transaction_, hs_lead_status, lifecyclestage,equiteq_region,type_of_company },
+		propertiesToSend: { name, numberofemployees, growth1yr_employees__linkedin_,advisory_client,is_equiteq_sell_side_in_market_, sip___is_cancelled_on_hold, sip___is_coming_to_market, sip___is_coming_to_market__sales_opp_, sip___is_considering_a_transaction, is_deal_in_market_, is_equiteq_buy_side_target_in_market_, live_recent_transaction_, transaction__as_target__equiteq_advised__, hs_lead_status, lifecyclestage,equiteq_region,type_of_company },
 	} = context;
 	
 	try {
@@ -11,6 +11,7 @@ exports.main = async (context = {}, sendResponse) => {
 		const Alert_sip___is_coming_to_market = sip___is_coming_to_market =='true' ? true : false;
 		const Alert_sip___is_coming_to_market__sales_opp_ = sip___is_coming_to_market__sales_opp_ =='true' ? true : false;
 		const Alert_sip___is_considering_a_transaction = sip___is_considering_a_transaction =='true' ? true : false;
+		const Alert_transaction__as_target__equiteq_advised__ = transaction__as_target__equiteq_advised__ =='true' ? true : false;
 
 		const Alert_is_deal_in_market_ = is_deal_in_market_ =='true' ? true : false;
 		const Alert_is_equiteq_buy_side_target_in_market_ = is_equiteq_buy_side_target_in_market_ =='true' ? true : false;
@@ -31,6 +32,20 @@ exports.main = async (context = {}, sendResponse) => {
 							    body: {
 								    type: 'text',
 								    text: 'Company has recently transacted',
+							    },
+						    },
+					    ]
+					    : []),
+
+					...(Alert_transaction__as_target__equiteq_advised__
+					    ? [
+						    {
+							    type: 'alert',
+							    title: 'Equiteq Deal!',
+							    variant: 'error',
+							    body: {
+								    type: 'text',
+								    text: 'Transaction advised by Equiteq',
 							    },
 						    },
 					    ]
