@@ -21,7 +21,7 @@ exports.main = async (context = {}, sendResponse) => {
 
 	
 
-		const advisorstring2 = lead_sell_side_advisor__text_ == "" ? "(unknown advisor)" : lead_sell_side_advisor__text_;
+		const advisorstring2 = lead_sell_side_advisor__text_ == null ? "(unknown advisor)" : lead_sell_side_advisor__text_;
 		const advisorstring1 = "Company in process with a 3rd party advisor: ";
 
 		var advisorstring  = advisorstring1.concat(advisorstring2);
