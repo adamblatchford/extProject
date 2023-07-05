@@ -14,24 +14,9 @@ exports.main = async (context = {}, sendResponse) => {
 				
 				 "type": "tile",
 				 "body": [
-				
-				...(shouldIncludeAlertSection
-				    ? [
-					    {
-							    type: 'alert',
-							    title: 'Equiteq Deal',
-							    variant: 'success',
-							    body: {
-								    type: 'text',
-								    text: 'Live Mandate',
-							    },
-						    },
-				    ]
-				    : []),
-				
 				{
-						 type: 'statistics',
-						 items: [
+					type: 'statistics',
+					items: [
 						  {
 							  label: 'Number Employees',
 							  number: numberofemployees,
