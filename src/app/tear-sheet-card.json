@@ -1,0 +1,16 @@
+{
+  "type": "crm-card",
+  "data": {
+    "title": "Tear Sheet",
+    "location": "crm.record.tab",
+    "fetch": {
+      "targetFunction": "crm-card",
+      "objectTypes": [
+        {
+          "name": "companies",
+          "propertiesToSend": ["name", "growth1yr_employees__linkedin_","numberofemployees"]
+        }
+      ]
+    }
+  }
+}

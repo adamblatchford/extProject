@@ -1,0 +1,15 @@
+{
+  "name": "Tear Sheet",
+  "description": "",
+  "scopes": ["crm.objects.companies.read", "crm.objects.companies.write"],
+  "public": false,
+  "extensions": {
+    "crm": {
+      "cards": [
+        {
+          "file": "./tear-sheet-card.json"
+        }
+      ]
+    }
+  }
+}
