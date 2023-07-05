@@ -161,11 +161,6 @@ exports.main = async (context = {}, sendResponse) => {
 							 ]
 					 },
 
-					 {
-						 "type": "divider",
-						 "distance": "large"
-					 },
-					 
 				 ],
 				}
 			],
