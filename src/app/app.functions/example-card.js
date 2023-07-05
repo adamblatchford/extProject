@@ -5,7 +5,7 @@ exports.main = async (context = {}, sendResponse) => {
 	
 	try {
 		const direction = growth1yr_employees__linkedin_ > 0 ? 'increase' : 'decrease';
-		const shouldIncludeAlertSection = false;
+		const shouldIncludeAlertSection = true;
 		
 		sendResponse({
 			
