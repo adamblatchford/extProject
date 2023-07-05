@@ -30,7 +30,8 @@ exports.main = async (context = {}, sendResponse) => {
 				
 					 {
 						 "type": "heading",
-						 "text": "data snapshot"
+						 "format": "markdown",
+						 "text": "**data snapshot**"
 					 },
 					 
 					 {
