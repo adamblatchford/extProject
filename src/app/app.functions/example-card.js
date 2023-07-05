@@ -1,17 +1,17 @@
 exports.main = async (context = {}, sendResponse) => {
 	const {
-		propertiesToSend: { name, numberofemployees, growth1yr_employees__linkedin_,is_equiteq_sell_side_in_market_, hs_lead_status, lifecyclestage,equiteq_region,type_of_company },
+		propertiesToSend: { name, numberofemployees, growth1yr_employees__linkedin_,is_equiteq_sell_side_in_market_, sip___is_cancelled_on_hold, sip___is_coming_to_market, sip___is_coming_to_market__sales_opp_, sip___is_considering_a_transaction, hs_lead_status, lifecyclestage,equiteq_region,type_of_company },
 	} = context;
 	
 	try {
 		const direction = growth1yr_employees__linkedin_ > 0 ? 'increase' : 'decrease';
-		const shouldIncludeAlertSection = true;
+		const Alert_is_equiteq_sell_side_in_market_ = true;
 		
 		sendResponse({
 			
 			title: 'This card retrieves key contact details.',
 			sections: [
-					 ...(shouldIncludeAlertSection
+					 ...(Alert_is_equiteq_sell_side_in_market_
 					    ? [
 						    {
 							    type: 'alert',
