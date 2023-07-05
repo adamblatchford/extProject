@@ -7,13 +7,13 @@ exports.main = async (context = {}, sendResponse) => {
 		const direction = growth1yr_employees__linkedin_ > 0 ? 'increase' : 'decrease';
 		const Alert_is_equiteq_sell_side_in_market_ = is_equiteq_sell_side_in_market_;
 		const Alert_sip___is_cancelled_on_hold_ = sip___is_cancelled_on_hold;
-		const Alert_sip___is_coming_to_market = true;
-		const Alert_sip___is_coming_to_market__sales_opp_ = true;
-		const Alert_sip___is_considering_a_transaction = true;
+		const Alert_sip___is_coming_to_market = sip___is_coming_to_market;
+		const Alert_sip___is_coming_to_market__sales_opp_ = sip___is_coming_to_market__sales_opp_;
+		const Alert_sip___is_considering_a_transaction = sip___is_considering_a_transaction;
 
-		const Alert_is_deal_in_market_ = true;
-		const Alert_is_equiteq_buy_side_target_in_market_ = true;
-		const Alert_live_recent_transaction_ = true;
+		const Alert_is_deal_in_market_ = is_deal_in_market_;
+		const Alert_is_equiteq_buy_side_target_in_market_ = is_equiteq_buy_side_target_in_market_;
+		const Alert_live_recent_transaction_ = live_recent_transaction_;
 			
 		sendResponse({
 			
