@@ -1,6 +1,6 @@
 exports.main = async (context = {}, sendResponse) => {
   const {
-    propertiesToSend: { name, numberofemployees, growth1yr_employees__linkedin_ },
+    propertiesToSend: { name, numberofemployees, growth1yr_employees__linkedin_,is_equiteq_sell_side_in_market_ },
   } = context;
   try {
 	   const direction = growth1yr_employees__linkedin_ > 0 ? 'increase' : 'decrease';
