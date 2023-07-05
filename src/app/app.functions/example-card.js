@@ -38,8 +38,7 @@ exports.main = async (context = {}, sendResponse) => {
 						  }
 					  	],
 					},
-					 {
-					 },
+					
 					 {
 						 "type": "alert",
 						 "title": "Equiteq Deal",
