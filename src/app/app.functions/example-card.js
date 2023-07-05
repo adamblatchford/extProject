@@ -16,7 +16,6 @@ exports.main = async (context = {}, sendResponse) => {
 				 "body": [
 					 
 					 {
-						 {
 				...(shouldIncludeAlertSection
 					    ? [
 						    {
@@ -30,7 +29,8 @@ exports.main = async (context = {}, sendResponse) => {
 						    },
 					    ]
 					    : []),
-					 
+						 
+				{
 						 type: 'statistics',
 						 items: [
 						  {
