@@ -136,7 +136,7 @@ exports.main = async (context = {}, sendResponse) => {
 							    variant: 'info',
 							    body: {
 								    type: 'text',
-								    text: 'Has been an advisory client',
+								    text: '',
 							    },
 						    },
 					    ]
