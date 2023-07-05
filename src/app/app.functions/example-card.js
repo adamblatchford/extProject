@@ -29,7 +29,7 @@ exports.main = async (context = {}, sendResponse) => {
 				 "body": [
 				
 					 {
-						 "type": "heading",
+						 "type": "text",
 						 "format": "markdown",
 						 "text": "**Engagement**"
 					 },
