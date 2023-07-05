@@ -29,54 +29,54 @@ exports.main = async (context = {}, sendResponse) => {
 					    ]
 					    : []),
 
-				...(Alert_is_equiteq_sell_side_in_market_
+				...(Alert_sip___is_cancelled_on_hold_
 					    ? [
 						    {
 							    type: 'alert',
 							    title: 'Equiteq Deal',
-							    variant: 'success',
+							    variant: 'warning',
 							    body: {
 								    type: 'text',
-								    text: 'Live Mandate',
+								    text: 'On Hold/Cancelled',
 							    },
 						    },
 					    ]
 					    : []),
-				...(Alert_is_equiteq_sell_side_in_market_
+				...(Alert_sip___is_coming_to_market
 					    ? [
 						    {
 							    type: 'alert',
 							    title: 'Equiteq Deal',
-							    variant: 'success',
+							    variant: 'info',
 							    body: {
 								    type: 'text',
-								    text: 'Live Mandate',
+								    text: 'Coming to Market (Info Prep)',
 							    },
 						    },
 					    ]
 					    : []),
-				...(Alert_is_equiteq_sell_side_in_market_
+				...(Alert_sip___is_coming_to_market__sales_opp_
 					    ? [
 						    {
 							    type: 'alert',
 							    title: 'Equiteq Deal',
-							    variant: 'success',
+							    variant: 'info',
 							    body: {
 								    type: 'text',
-								    text: 'Live Mandate',
+								    text: 'Coming to Market (Pitching)',
 							    },
 						    },
 					    ]
 					    : []),
-				...(Alert_is_equiteq_sell_side_in_market_
+				...(Alert_sip___is_considering_a_transaction
 					    ? [
 						    {
 							    type: 'alert',
 							    title: 'Equiteq Deal',
-							    variant: 'success',
+							    variant: 'info',
 							    body: {
 								    type: 'text',
-								    text: 'Live Mandate',
+								    text: 'Considering A Transaction (Early Sales Pipeline)',
 							    },
 						    },
 					    ]
