@@ -5,7 +5,7 @@ exports.main = async (context = {}, sendResponse) => {
 	
 	try {
 		const direction = growth1yr_employees__linkedin_ > 0 ? 'increase' : 'decrease';
-		const Alert_is_equiteq_sell_side_in_market_ = true;
+		const Alert_is_equiteq_sell_side_in_market_ = is_equiteq_sell_side_in_market_;
 		const Alert_sip___is_cancelled_on_hold_ = sip___is_cancelled_on_hold;
 		const Alert_sip___is_coming_to_market = true;
 		const Alert_sip___is_coming_to_market__sales_opp_ = true;
