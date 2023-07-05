@@ -11,7 +11,12 @@ exports.main = async (context = {}, sendResponse) => {
 			
 			title: 'This card retrieves key contact details.',
 			sections: [
-				{
+				
+				 "type": "tile",
+				 "body": [
+					 
+					 {
+						 {
 				...(shouldIncludeAlertSection
 					    ? [
 						    {
@@ -26,10 +31,6 @@ exports.main = async (context = {}, sendResponse) => {
 					    ]
 					    : []),
 					 
-				 "type": "tile",
-				 "body": [
-					 
-					 {
 						 type: 'statistics',
 						 items: [
 						  {
