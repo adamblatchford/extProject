@@ -8,7 +8,7 @@
       "objectTypes": [
         {
           "name": "companies",
-          "propertiesToSend": ["name", "growth1yr_employees__linkedin_","numberofemployees"]
+          "propertiesToSend": ["name", "growth1yr_employees__linkedin_","numberofemployees", "is_equiteq_sell_side_in_market_"]
         }
       ]
     }
