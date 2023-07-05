@@ -1,6 +1,6 @@
 exports.main = async (context = {}, sendResponse) => {
 	const {
-		propertiesToSend: { name, numberofemployees, growth1yr_employees__linkedin_,advisory_client,is_equiteq_sell_side_in_market_, sip___is_cancelled_on_hold, sip___is_coming_to_market, sip___is_coming_to_market__sales_opp_, sip___is_considering_a_transaction, is_deal_in_market_, is_equiteq_buy_side_target_in_market_, live_recent_transaction_, transaction__as_target__equiteq_advised__, hs_lead_status, lifecyclestage,equiteq_region,type_of_company },
+		propertiesToSend: { name, numberofemployees, growth1yr_employees__linkedin_,advisory_client,is_equiteq_sell_side_in_market_, sip___is_cancelled_on_hold, sip___is_coming_to_market, sip___is_coming_to_market__sales_opp_, sip___is_considering_a_transaction, is_deal_in_market_, lead_sell_side_advisor__text_, is_equiteq_buy_side_target_in_market_, live_recent_transaction_, transaction__as_target__equiteq_advised__, hs_lead_status, lifecyclestage,equiteq_region,type_of_company },
 	} = context;
 	
 	try {
@@ -18,6 +18,10 @@ exports.main = async (context = {}, sendResponse) => {
 		const Alert_live_recent_transaction_ = live_recent_transaction_ =='true' ? true : false;
 
 		const friendly_lifecyclestage = lifecyclestage == "65401112" ? "Nurture" : lifecyclestage
+
+	
+
+		const advisorstring = lead_sell_side_advisor__text_ == "" ? " (unknown advisor)" : lead_sell_side_advisor__text_;
 			
 		sendResponse({
 			
