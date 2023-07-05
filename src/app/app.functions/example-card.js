@@ -58,31 +58,6 @@ exports.main = async (context = {}, sendResponse) => {
 							 ]
 					 },
 					 
-					 {
-						 type: 'statistics',
-						 items: [
-						  {
-							  label: 'Number Employees',
-							  number: numberofemployees,
-							  description: {
-								  type: 'trend',
-								  value: growth1yr_employees__linkedin_,
-								  direction: direction,
-							  }
-						  },
-						  
-						  {
-							  label: 'Number Employees',
-							  number: numberofemployees,
-							  description: {
-								  type: 'trend',
-								  value: growth1yr_employees__linkedin_,
-								  direction: direction,
-							  }
-						  }
-					  	],
-					},
-					
 				 ],
 				}
 			],
