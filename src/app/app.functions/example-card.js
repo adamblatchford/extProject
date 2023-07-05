@@ -11,7 +11,7 @@ exports.main = async (context = {}, sendResponse) => {
 		const Alert_sip___is_coming_to_market__sales_opp_ = sip___is_coming_to_market__sales_opp_;
 		const Alert_sip___is_considering_a_transaction = sip___is_considering_a_transaction;
 
-		const Alert_is_deal_in_market_ = is_deal_in_market_;
+		const Alert_is_deal_in_market_ = is_deal_in_market_ =='false' ? false : true;
 		const Alert_is_equiteq_buy_side_target_in_market_ = is_equiteq_buy_side_target_in_market_;
 		const Alert_live_recent_transaction_ = live_recent_transaction_ =='false' ? false : true;
 			
@@ -27,7 +27,7 @@ exports.main = async (context = {}, sendResponse) => {
 							    variant: 'error',
 							    body: {
 								    type: 'text',
-								    text: live_recent_transaction_,
+								    text: 'Company has recently transacted',
 							    },
 						    },
 					    ]
