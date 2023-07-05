@@ -5,6 +5,7 @@ exports.main = async (context = {}, sendResponse) => {
 	
 	try {
 		const direction = growth1yr_employees__linkedin_ > 0 ? 'increase' : 'decrease';
+		const shouldIncludeAlertSection = true;
 		
 		sendResponse({
 			
@@ -39,7 +40,7 @@ exports.main = async (context = {}, sendResponse) => {
 					  	],
 					},
 					
-					 {
+					shouldIncludeAlertSection && {
 						 "type": "alert",
 						 "title": "Equiteq Deal",
 						 "variant": "success",
