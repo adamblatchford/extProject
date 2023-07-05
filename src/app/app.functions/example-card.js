@@ -5,13 +5,27 @@ exports.main = async (context = {}, sendResponse) => {
 	
 	try {
 		const direction = growth1yr_employees__linkedin_ > 0 ? 'increase' : 'decrease';
-		const shouldIncludeAlertSection = false;
+		const shouldIncludeAlertSection = true;
 		
 		sendResponse({
 			
 			title: 'This card retrieves key contact details.',
 			sections: [
 				{
+				...(shouldIncludeAlertSection
+					    ? [
+						    {
+							    type: 'alert',
+							    title: 'Equiteq Deal',
+							    variant: 'success',
+							    body: {
+								    type: 'text',
+								    text: 'Live Mandate',
+							    },
+						    },
+					    ]
+					    : []),
+					 
 				 "type": "tile",
 				 "body": [
 					 
@@ -40,20 +54,6 @@ exports.main = async (context = {}, sendResponse) => {
 					  	],
 					},
 					
-					...(shouldIncludeAlertSection
-					    ? [
-						    {
-							    type: 'alert',
-							    title: 'Equiteq Deal',
-							    variant: 'success',
-							    body: {
-								    type: 'text',
-								    text: 'Live Mandate',
-							    },
-						    },
-					    ]
-					    : []),
-					 
 					 {
 						 "type": "divider",
 						 "distance": "small"
