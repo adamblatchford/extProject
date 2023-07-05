@@ -15,6 +15,8 @@ exports.main = async (context = {}, sendResponse) => {
 		const Alert_is_deal_in_market_ = is_deal_in_market_ =='true' ? true : false;
 		const Alert_is_equiteq_buy_side_target_in_market_ = is_equiteq_buy_side_target_in_market_ =='true' ? true : false;
 		const Alert_live_recent_transaction_ = live_recent_transaction_ =='true' ? true : false;
+
+		const friendly_lifecyclestage = lifecyclestage == "65401112" ? "Nurture" : lifecyclestage
 			
 		sendResponse({
 			
@@ -158,7 +160,7 @@ exports.main = async (context = {}, sendResponse) => {
 							 [
 								 {
 									 "label": "Lifecycle Stage",
-									 "value": lifecyclestage
+									 "value": friendly_lifecyclestage
 								 },
 								 {
 									 "label": "Lead Status",
