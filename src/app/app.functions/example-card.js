@@ -6,12 +6,69 @@ exports.main = async (context = {}, sendResponse) => {
 	try {
 		const direction = growth1yr_employees__linkedin_ > 0 ? 'increase' : 'decrease';
 		const Alert_is_equiteq_sell_side_in_market_ = true;
+		const Alert_sip___is_cancelled_on_hold_ = true;
+		const Alert_sip___is_coming_to_market = true;
+		const Alert_sip___is_coming_to_market__sales_opp_ = true;
+		const Alert_sip___is_considering_a_transaction = true;
 		
 		sendResponse({
 			
 			title: 'This card retrieves key contact details.',
 			sections: [
-					 ...(Alert_is_equiteq_sell_side_in_market_
+				...(Alert_is_equiteq_sell_side_in_market_
+					    ? [
+						    {
+							    type: 'alert',
+							    title: 'Equiteq Deal',
+							    variant: 'success',
+							    body: {
+								    type: 'text',
+								    text: 'Live Mandate',
+							    },
+						    },
+					    ]
+					    : []),
+
+				...(Alert_is_equiteq_sell_side_in_market_
+					    ? [
+						    {
+							    type: 'alert',
+							    title: 'Equiteq Deal',
+							    variant: 'success',
+							    body: {
+								    type: 'text',
+								    text: 'Live Mandate',
+							    },
+						    },
+					    ]
+					    : []),
+				...(Alert_is_equiteq_sell_side_in_market_
+					    ? [
+						    {
+							    type: 'alert',
+							    title: 'Equiteq Deal',
+							    variant: 'success',
+							    body: {
+								    type: 'text',
+								    text: 'Live Mandate',
+							    },
+						    },
+					    ]
+					    : []),
+				...(Alert_is_equiteq_sell_side_in_market_
+					    ? [
+						    {
+							    type: 'alert',
+							    title: 'Equiteq Deal',
+							    variant: 'success',
+							    body: {
+								    type: 'text',
+								    text: 'Live Mandate',
+							    },
+						    },
+					    ]
+					    : []),
+				...(Alert_is_equiteq_sell_side_in_market_
 					    ? [
 						    {
 							    type: 'alert',
