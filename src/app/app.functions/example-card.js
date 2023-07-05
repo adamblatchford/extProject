@@ -27,7 +27,7 @@ exports.main = async (context = {}, sendResponse) => {
 							    variant: 'error',
 							    body: {
 								    type: 'text',
-								    text: 'Company has recently transacted',
+								    text: live_recent_transaction_,
 							    },
 						    },
 					    ]
