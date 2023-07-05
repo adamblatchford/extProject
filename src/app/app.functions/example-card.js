@@ -1,11 +1,12 @@
 exports.main = async (context = {}, sendResponse) => {
 	const {
-		propertiesToSend: { name, numberofemployees, growth1yr_employees__linkedin_,is_equiteq_sell_side_in_market_, sip___is_cancelled_on_hold, sip___is_coming_to_market, sip___is_coming_to_market__sales_opp_, sip___is_considering_a_transaction, is_deal_in_market_, is_equiteq_buy_side_target_in_market_, live_recent_transaction_, hs_lead_status, lifecyclestage,equiteq_region,type_of_company },
+		propertiesToSend: { name, numberofemployees, growth1yr_employees__linkedin_,advisory_client,is_equiteq_sell_side_in_market_, sip___is_cancelled_on_hold, sip___is_coming_to_market, sip___is_coming_to_market__sales_opp_, sip___is_considering_a_transaction, is_deal_in_market_, is_equiteq_buy_side_target_in_market_, live_recent_transaction_, hs_lead_status, lifecyclestage,equiteq_region,type_of_company },
 	} = context;
 	
 	try {
 		const direction = growth1yr_employees__linkedin_ > 0 ? 'increase' : 'decrease';
-		const Alert_is_equiteq_sell_side_in_market_ = is_equiteq_sell_side_in_market_ =='true' ? true : false;
+		const Alert_advisory_client = advisory_client =='true' ? true : false 
+		const Alert_is_equiteq_sell_side_in_market_ = is_equiteq_sell_side_in_market_ =='true' ? true : false 
 		const Alert_sip___is_cancelled_on_hold_ = sip___is_cancelled_on_hold =='true' ? true : false;;
 		const Alert_sip___is_coming_to_market = sip___is_coming_to_market =='true' ? true : false;
 		const Alert_sip___is_coming_to_market__sales_opp_ = sip___is_coming_to_market__sales_opp_ =='true' ? true : false;
@@ -123,6 +124,19 @@ exports.main = async (context = {}, sendResponse) => {
 							    body: {
 								    type: 'text',
 								    text: 'Considering A Transaction (Early Sales Pipeline)',
+							    },
+						    },
+					    ]
+					    : []),
+				...(Alert_advisory_client
+					    ? [
+						    {
+							    type: 'alert',
+							    title: 'Advisory Client',
+							    variant: 'info',
+							    body: {
+								    type: 'text',
+								    text: 'Has been an advisory client',
 							    },
 						    },
 					    ]
