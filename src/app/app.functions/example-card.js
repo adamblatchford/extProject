@@ -5,15 +5,15 @@ exports.main = async (context = {}, sendResponse) => {
 	
 	try {
 		const direction = growth1yr_employees__linkedin_ > 0 ? 'increase' : 'decrease';
-		const Alert_is_equiteq_sell_side_in_market_ = is_equiteq_sell_side_in_market_ =='false' ? false : true;
-		const Alert_sip___is_cancelled_on_hold_ = sip___is_cancelled_on_hold =='false' ? false : true;
-		const Alert_sip___is_coming_to_market = sip___is_coming_to_market =='false' ? false : true;
-		const Alert_sip___is_coming_to_market__sales_opp_ = sip___is_coming_to_market__sales_opp_ =='false' ? false : true;
-		const Alert_sip___is_considering_a_transaction = sip___is_considering_a_transaction =='false' ? false : true;
+		const Alert_is_equiteq_sell_side_in_market_ = is_equiteq_sell_side_in_market_ =='true' ? true : false;
+		const Alert_sip___is_cancelled_on_hold_ = sip___is_cancelled_on_hold =='true' ? true : false;;
+		const Alert_sip___is_coming_to_market = sip___is_coming_to_market =='true' ? true : false;
+		const Alert_sip___is_coming_to_market__sales_opp_ = sip___is_coming_to_market__sales_opp_ =='true' ? true : false;
+		const Alert_sip___is_considering_a_transaction = sip___is_considering_a_transaction =='true' ? true : false;
 
-		const Alert_is_deal_in_market_ = is_deal_in_market_ =='false' ? false : true;
+		const Alert_is_deal_in_market_ = is_deal_in_market_ =='true' ? true : false;
 		const Alert_is_equiteq_buy_side_target_in_market_ = is_equiteq_buy_side_target_in_market_ =='true' ? true : false;
-		const Alert_live_recent_transaction_ = live_recent_transaction_ =='false' ? false : true;
+		const Alert_live_recent_transaction_ = live_recent_transaction_ =='true' ? true : false;
 			
 		sendResponse({
 			
