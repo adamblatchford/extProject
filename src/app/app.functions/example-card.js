@@ -14,6 +14,19 @@ exports.main = async (context = {}, sendResponse) => {
 				{
 				 "type": "tile",
 				 "body": [
+					 ...(shouldIncludeAlertSection
+					    ? [
+						    {
+							    type: 'alert',
+							    title: 'Equiteq Deal',
+							    variant: 'success',
+							    body: {
+								    type: 'text',
+								    text: 'Live Mandate',
+							    },
+						    },
+					    ]
+					    : []),
 					 
 					 {
 						 type: 'statistics',
@@ -40,20 +53,7 @@ exports.main = async (context = {}, sendResponse) => {
 					  	],
 					},
 					
-					...(shouldIncludeAlertSection
-					    ? [
-						    {
-							    type: 'alert',
-							    title: 'Equiteq Deal',
-							    variant: 'success',
-							    body: {
-								    type: 'text',
-								    text: 'Live Mandate',
-							    },
-						    },
-					    ]
-					    : []),
-					 
+					
 					 {
 						 "type": "divider",
 						 "distance": "small"
