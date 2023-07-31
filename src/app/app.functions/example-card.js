@@ -25,6 +25,8 @@ exports.main = async (context = {}, sendResponse) => {
 		const advisorstring1 = "Company in process with a 3rd party advisor: ";
 
 		var advisorstring  = advisorstring1.concat(advisorstring2);
+
+		rolling_list_of_conversions.replaceAll("\n", "  \n")
 		
 		sendResponse({
 			
