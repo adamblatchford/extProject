@@ -26,7 +26,7 @@ exports.main = async (context = {}, sendResponse) => {
 
 		var advisorstring  = advisorstring1.concat(advisorstring2);
 
-		rolling_list_of_conversions.replaceAll("\n", "  \n")
+		let rlc = rolling_list_of_conversions.replaceAll("\n", "  \n")
 		
 		sendResponse({
 			
@@ -211,7 +211,7 @@ exports.main = async (context = {}, sendResponse) => {
 					  {
 						 "type": "text",
 						 "format": "markdown",
-						 "text": "`" + rolling_list_of_conversions + "`" + "  \n" + "Test"
+						 "text": "`" + rlc + "`"
 					 },
 					 
 					 {
