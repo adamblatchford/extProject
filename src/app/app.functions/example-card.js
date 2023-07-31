@@ -209,7 +209,7 @@ exports.main = async (context = {}, sendResponse) => {
 					  {
 						 "type": "text",
 						 "format": "markdown",
-						 "text": "'" + rolling_list_of_conversions + "'"
+						 "text": "`" + rolling_list_of_conversions + "`"
 					 },
 					 
 					 {
