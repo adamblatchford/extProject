@@ -211,7 +211,7 @@ exports.main = async (context = {}, sendResponse) => {
 					  {
 						 "type": "text",
 						 "format": "markdown",
-						 "text": "`" + rlc + "`"
+						 "text": rlc
 					 },
 					 
 					 {
