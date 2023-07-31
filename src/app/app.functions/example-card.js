@@ -214,18 +214,6 @@ exports.main = async (context = {}, sendResponse) => {
 						 "text": rlc
 					 },
 					 
-					 {
-						 "type": "descriptionList",
-						 "direction": "column",
-						 "items":
-							 [
-
-								  {
-									 "label": "Form Conversions",
-									 "value": rolling_list_of_conversions
-								 },
-							 ]
-					 },
 
 				 ],
 				}
