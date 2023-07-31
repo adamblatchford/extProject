@@ -205,6 +205,12 @@ exports.main = async (context = {}, sendResponse) => {
 						 "format": "markdown",
 						 "text": "**Forms**"
 					 },
+
+					  {
+						 "type": "text",
+						 "format": "markdown",
+						 "text": rolling_list_of_conversions
+					 },
 					 
 					 {
 						 "type": "descriptionList",
