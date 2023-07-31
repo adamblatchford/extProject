@@ -94,7 +94,7 @@ exports.main = async (context = {}, sendResponse) => {
 							    variant: 'success',
 							    body: {
 								    type: 'text',
-								    text: rolling_list_of_conversions,
+								    text: 'Live Mandate',
 							    },
 						    },
 					    ]
