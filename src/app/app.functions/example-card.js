@@ -208,7 +208,7 @@ exports.main = async (context = {}, sendResponse) => {
 					 
 					 {
 						 "type": "descriptionList",
-						 "direction": "row",
+						 "direction": "column",
 						 "items":
 							 [
 
