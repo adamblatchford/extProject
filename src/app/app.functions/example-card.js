@@ -26,7 +26,7 @@ exports.main = async (context = {}, sendResponse) => {
 
 		var advisorstring  = advisorstring1.concat(advisorstring2);
 
-		let rlc = rolling_list_of_conversions.replaceAll("\n", "  \n")
+		let rlc = rolling_list_of_conversions.replaceAll("\n", "  \n");
 		
 		sendResponse({
 			
