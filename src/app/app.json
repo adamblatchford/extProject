@@ -2,6 +2,7 @@
   "name": "Tear Sheet",
   "description": "",
   "scopes": ["crm.objects.companies.read", "crm.objects.companies.write"],
+  "uid": "company_summary_page",
   "public": false,
   "extensions": {
     "crm": {
